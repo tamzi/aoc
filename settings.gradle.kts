@@ -1,3 +1,3 @@
 
-rootProject.name = "aocTemplate"
+rootProject.name = "aoc"
 
