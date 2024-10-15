@@ -1,4 +1,4 @@
-package aoc2015.solution
+package aoc2015.solution.day1
 
 
 
