@@ -59,3 +59,25 @@ fun thereWouldBeNoMath(l: Int, w: Int, h: Int): Int {
     return surfaceArea + smallestSide
 }
 
+
+
+fun main() {
+    // link to the input file in resources
+    val noMathInput = object {}.javaClass.getResource("/002Input.txt")?.readText()
+
+    // function to get the result and print it
+    if (noMathInput != null) {
+        val totalWrappingPaper = noMathInput.lines().map {
+            val (l, w, h) = it.split("x").map { it.toInt() }
+            thereWouldBeNoMath(l, w, h)
+        }.sum()
+        println(totalWrappingPaper)
+        // if the file does not exist, we print an error message as shown
+    } else {
+        println("Error: Input file not found.")
+    }
+}
+
+
+
+
