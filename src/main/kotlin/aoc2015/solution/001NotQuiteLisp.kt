@@ -1,6 +1,7 @@
 package aoc2015.solution
 
 
+
 fun notQuiteLisp(instructions: String): Int {
     var floor = 0
     for (char in instructions) {
