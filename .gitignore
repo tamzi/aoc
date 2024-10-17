@@ -2,3 +2,8 @@
 /.gradle/
 /build/
 /build/classes/kotlin/main/
+
+.idea/
+
+# Gradle files
+*.iml
